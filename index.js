@@ -26,7 +26,7 @@ function currentLine(katzDeliLine) {
     return 'The line is currently empty.';
   } else {
     for(let i = 0; i < katzDeliLine.length; i++) {
-      lineup = lineup + parseInt(i+1) + '.' + katzDeliLine[i] + ', '
+      lineup = lineup + parseInt(i+1) + '. ' + katzDeliLine[i] + ', '
     }
   }
   return 'The line is currently: ' + lineup.slice(lineup, lineup.length - 2) ;
