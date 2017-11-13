@@ -7,7 +7,7 @@ function takeANumber(katzDeliLine, customerName) {
   return 'Welcome, ' + customerName + '. You are number ' + katzDeliLine.length + ' in line.'
 }
 
-function nowServing() {
+function nowServing(katzDeliLine) {
   // first check to see if there are customers waiting to be served
   if(katzDeliLine[0] === undefined) {
     return 'There is nobody waiting to be served!'
