@@ -16,6 +16,6 @@ function nowServing(katzDeliLine) {
     let nowServed = katzDeliLine[0];
     // update the array by removing the first person
     katzDeliLine.shift();
-    return 'currently serving ' + nowServed + '.';
+    return 'Currently serving ' + nowServed + '.';
   }
 }
