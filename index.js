@@ -21,7 +21,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  // create a string variable to append our lineup to
+  // create a string variable to build our lineup statement
   var lineup = '';
   // first check to see if there is nobody in line
   if(katzDeliLine[0] === undefined) {
