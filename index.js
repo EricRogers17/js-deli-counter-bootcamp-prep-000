@@ -19,3 +19,15 @@ function nowServing(katzDeliLine) {
     return 'Currently serving ' + nowServed + '.';
   }
 }
+
+function currentLine(katzDeliLine) {
+  var lineup = '';
+  if(katzDeliLine[0] === undefined) {
+    return 'The line is currently empty.';
+  } else {
+    for(let i = 0; i < katzDeliLine.length; i++) {
+      lineup = i + katzDeliLine[i] + ', '
+    }
+  }
+  return 'The line is currently: ' + lineup;
+}
