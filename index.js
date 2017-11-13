@@ -9,7 +9,7 @@ function takeANumber(katzDeliLine, customerName) {
 
 function nowServing() {
   // first check to see if there are customers waiting to be served
-  if(katzDeliLine[] === undefined) {
+  if(katzDeliLine === null) {
     return 'There is nobody waiting to be served!'
   } else {
     // grab the person being served before updating array
