@@ -21,13 +21,18 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
+  // create a string variable to append our lineup to
   var lineup = '';
+  // first check to see if there is nobody in line
   if(katzDeliLine[0] === undefined) {
     return 'The line is currently empty.';
   } else {
+    // loop through the array to extract data
     for(let i = 0; i < katzDeliLine.length; i++) {
+      // a relatively complex way to append new people to our lineup string
       lineup = lineup + parseInt(i+1) + '. ' + katzDeliLine[i] + ', '
     }
   }
-  return 'The line is currently: ' + lineup.slice(lineup, lineup.length - 2) ;
+  // return our statement and lop off the trailing comma
+  return 'The line is currently: ' + lineup.slice(lineup, lineup.length - 2);
 }
